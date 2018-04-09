@@ -40,7 +40,7 @@ public class BagDemo {
             }else if (option == 2) {
                 System.out.println("What is the weight of the item?");
                 double newWeight = keyboard.nextDouble();
-                //myBag.addItem(newWeight);
+                myBag.addItem(newWeight);
 //else if the user picks option 3, prompt the user for the new maximum
 //weight of the bag and save the new maximum weight in a variable
 //called newMaximumWeight
@@ -48,12 +48,12 @@ public class BagDemo {
             }else if (option == 3) {
                 System.out.println("What should the new maximum weight of the bag be?");
                 double newMaximumWeight = keyboard.nextDouble();
-                //myBag.setMaximumWeight(newMaximumWeight);
+                myBag.setMaximumWeight(newMaximumWeight);
 //else if the user picks option 4, display to the screen the name of
 //the bag, the current weight of the bag, and the maximum weight
 //of the bag
             }else if (option == 4) {
-                System.out.println(myBag.getName());
+                System.out.println("The name of your bag is: " + myBag.getName() + "\nThe current weight is: " + myBag.getCurrentWeight() + "\nThe maximum weight is: " + myBag.getMaximumWeight());
 //else if the user picks option 5, display Goodbye.
             }else if (option == 5) {
 //else if the user picks any other option, display Error!
